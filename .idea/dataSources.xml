@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="208992717">
+    <data-source source="LOCAL" name="SQL Server - photodoc@10.93.104.55" uuid="9aca47d2-2dd5-4138-9b25-18c275ee7bd6">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://10.93.104.55:1433;databaseName=photodoc</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>

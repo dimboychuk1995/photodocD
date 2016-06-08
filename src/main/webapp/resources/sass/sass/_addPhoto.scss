@@ -1,0 +1,64 @@
+.form-uploading-photo{
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 50px;
+    &>div:nth-child(7),&>div:nth-child(8){
+        background: url(../img/search-icon.png) no-repeat right;
+    }
+    &>div:nth-child(9){
+        background: url(../img/doc-icon.png) no-repeat right;
+    }
+    & input[type="text"],select{
+      visibility: hidden;
+      position: absolute;
+      left: 420px;
+      top: 0;
+      @include transition(all 0.2s 0.1s);
+    }
+}
+.upload_file_container{
+    height: 40px;
+    width: 340px;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: right;
+    padding-right: 50px;
+    border: 1px solid transparent;
+    position: relative;
+    color: #7f7e7a;
+    @include transition(all 0.2s 0.1s);   
+    &:hover {
+      height: 50px;
+      width: 350px;
+      line-height: 50px;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 1px #888;
+    }
+
+}
+
+.upload_file_container input[type="file"]{
+    height: 50px;
+    position: absolute;
+    border: 1px solid red;
+    left: 0;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+    .container-for-submit{
+        width: 250px;
+        margin: 0 auto;
+    }
+
+#check_for_file{
+  position: absolute;
+  height: 40px;
+  top: -3px;
+  left: 420px;
+  padding-left: 40px;
+  min-width: 200px;
+ }
+.cheked-file{
+  background: url(../img/icon-check.png) no-repeat left;
+}

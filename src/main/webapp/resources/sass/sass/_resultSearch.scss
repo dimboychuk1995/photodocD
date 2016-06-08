@@ -1,0 +1,137 @@
+.wrapper-add-photo{
+    height: 40px;
+    position: relative;
+    & a{
+        text-decoration: none;
+    }
+}
+    .add-photo{
+        position: absolute;
+        right: 30px;
+        width: 250px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.4em;
+        background: #f93316;
+        box-shadow: 2px 2px 1px #888;
+		@include transition(all 1.2s ease-in-out);
+    }
+	.unable{
+		opacity: 0.1;
+	}
+.block-results{
+    @extend .w-1000;
+    padding: 50px;
+	position: relative;
+    box-sizing: border-box;
+}
+  .block-results:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+.list-result,.list-result ul{
+        display: inline-block;
+        box-shadow: 2px 2px 1px #888;
+        border-left: 3px solid #F8F8F8;
+    }    
+    .list-result ul{
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 300px;
+        @include transition(all 0.3s ease-in-out);   
+		z-index: 999;		
+    }
+    .list-result li{
+            cursor: pointer;
+            width: 300px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            color: #fff;
+            font-size: 1.1em;
+            background: #b8e89c;
+            border-bottom: 1px solid #8db67a;
+            @include transition(all 0.2s ease-in-out); 
+        &:hover{
+            background: #44bb01;
+            & ul{
+                width: 300px;
+                height: auto;
+            }
+        }
+                & li{
+                    overflow: hidden;
+                }        
+    }
+    .list-result li:last-child{
+        border-bottom: 0px;
+    }
+    .list-result>li{
+        position: relative;
+        display: block;
+        
+    }
+  .list-imgs-for-object{
+    float: right;
+    & li{
+      vertical-align: top;
+    }
+    & li div{
+      display: inline-block;
+      cursor: pointer;
+      border: 2px solid transparent;
+      border-radius: 3px;
+      overflow: hidden;
+      width: 150px;
+      height: 90px;
+
+    }
+    & img{
+      width: 150px;
+      height: 90px;
+      cursor: pointer;
+      @include transition(all 0.2s ease-in-out);
+    }
+    & li div:hover img{
+      width: 200px;
+      height: 140px;
+      margin-bottom: 100px;
+      margin-right: 70px;
+    }
+    & li div:hover{
+      border: 2px solid #44BB01;
+    }
+  }
+  .information-about-object{
+    opacity: 0;
+    position: absolute;
+    width: 300px;
+    background: #9FDAEE;
+    border: solid 1px #2BB0D7;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    left: 50px;
+    top: 0;
+    padding-left: 10px;
+    font-family: Calibri, Tahoma, Geneva, sans-serif;
+    @include transition(all 0.9s ease-in-out);
+    & div{
+      position: relative;
+      top: -35px;
+    }
+    & span{
+      font-weight: bold;
+    }
+    & img{
+        position: relative;
+        height: 50px;
+        top: -30px;
+        left: -35px;
+    }
+  }
