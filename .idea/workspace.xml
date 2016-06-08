@@ -926,7 +926,7 @@
       <workItem from="1465026867639" duration="2063000" />
       <workItem from="1465030398750" duration="144000" />
       <workItem from="1465030601468" duration="303000" />
-      <workItem from="1465415617523" duration="771000" />
+      <workItem from="1465415617523" duration="1276000" />
     </task>
     <task id="LOCAL-00001" summary="ability to delete file implemented">
       <created>1427715165011</created>
@@ -946,7 +946,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292652000" />
+    <option name="totallyTimeSpent" value="293157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
